@@ -83,7 +83,8 @@
             android:id="@+id/gender"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:maxLength="6"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -128,6 +129,7 @@
             android:id="@+id/mob"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
+            android:maxLength="10"
             android:inputType="phone"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -163,6 +165,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:checked="true"
                     android:text="BCA"/>
 
                 <RadioButton
@@ -207,5 +210,19 @@
             android:layout_weight="1"/>
 
     </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/chk1"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=" I accept all terms &amp; conditions. "/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:backgroundTint="@color/black"/>
 
 </LinearLayout>
