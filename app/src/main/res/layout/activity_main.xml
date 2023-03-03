@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/reg"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textColor="#090909"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
+        android:hint="Enter Full Name"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/baseline_account_circle_24"
+        app:startIconTint="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fname"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
+        android:hint="Enter Email ID"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/baseline_alternate_email_24"
+        app:startIconTint="@color/black"
+        app:suffixText=".com"
+        app:suffixTextColor="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
+        android:hint="Enter Gender"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/baseline_emoji_people_24"
+        app:startIconTint="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gender"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
+        android:hint="Select DOJ"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/baseline_date_range_24"
+        app:startIconTint="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/doj"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:focusable="false"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
+        android:hint="Enter Mobile Number"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/baseline_local_phone_24"
+        app:startIconTint="@color/black"
+        app:prefixText="+91"
+        app:prefixTextColor="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mob"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualification : "
+            android:textSize="19sp"/>                                                                                                                       sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BCA"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BBA"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BCOM"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Designation : "
+            android:textSize="19sp"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
